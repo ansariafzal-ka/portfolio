@@ -26,7 +26,7 @@ const ProjectCard = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="public\icons\link.svg" alt="link" width={16} height={16} />
+        <img src="icons\link.svg" alt="link" width={16} height={16} />
         {title}
       </a>
       <p className="text-gray-400 font-medium">{description}</p>

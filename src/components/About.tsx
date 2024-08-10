@@ -30,12 +30,12 @@ const About = () => {
               MERN, Python, Java, C programming, Excel, SQL
             </p>
             <div className="flex justify-center items-center gap-2 flex-wrap">
-              <TechCircle image="public\icons\javascript.svg" />
-              <TechCircle image="public\icons\typescript.svg" />
-              <TechCircle image="public\icons\react.svg" />
-              <TechCircle image="public\icons\next-js.svg" />
-              <TechCircle image="public\icons\tailwind.svg" />
-              <TechCircle image="public\icons\mongodb.svg" />
+              <TechCircle image="icons\javascript.svg" />
+              <TechCircle image="icons\typescript.svg" />
+              <TechCircle image="icons\react.svg" />
+              <TechCircle image="icons\next-js.svg" />
+              <TechCircle image="icons\tailwind.svg" />
+              <TechCircle image="icons\mongodb.svg" />
             </div>
             <div></div>
           </div>
