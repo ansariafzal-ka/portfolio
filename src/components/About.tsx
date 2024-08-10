@@ -10,7 +10,7 @@ const About = () => {
       id="about"
       className="min-w-full px-6 pb-12 border-b border-t border-gray-800 flex justify-center items-center"
       style={{
-        backgroundImage: 'url("src/assets/backgroud-2.png")',
+        backgroundImage: 'url("public/images/backgroud.png")',
       }}
     >
       <div className="py-12 flex flex-col justify-center items-center gap-6">
@@ -30,12 +30,12 @@ const About = () => {
               MERN, Python, Java, C programming, Excel, SQL
             </p>
             <div className="flex justify-center items-center gap-2 flex-wrap">
-              <TechCircle image="src\assets\icons\javascript.svg" />
-              <TechCircle image="src\assets\icons\typescript.svg" />
-              <TechCircle image="src\assets\icons\react.svg" />
-              <TechCircle image="src\assets\icons\next-js.svg" />
-              <TechCircle image="src\assets\icons\tailwind.svg" />
-              <TechCircle image="src\assets\icons\mongodb.svg" />
+              <TechCircle image="public\icons\javascript.svg" />
+              <TechCircle image="public\icons\typescript.svg" />
+              <TechCircle image="public\icons\react.svg" />
+              <TechCircle image="public\icons\next-js.svg" />
+              <TechCircle image="public\icons\tailwind.svg" />
+              <TechCircle image="public\icons\mongodb.svg" />
             </div>
             <div></div>
           </div>

@@ -5,7 +5,7 @@ const Hero = () => {
       id="home"
       className="min-w-full min-h-screen bg-cover bg-center"
       style={{
-        backgroundImage: 'url("src/assets/backgroud-2.png")',
+        backgroundImage: 'url("public/images/backgroud.png")',
       }}
     >
       <NavBar />
