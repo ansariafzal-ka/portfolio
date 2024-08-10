@@ -10,7 +10,7 @@ const About = () => {
       id="about"
       className="min-w-full px-6 pb-12 border-b border-t border-gray-800 flex justify-center items-center"
       style={{
-        backgroundImage: 'url("public/images/backgroud.png")',
+        backgroundImage: 'url("images/backgroud.png")',
       }}
     >
       <div className="py-12 flex flex-col justify-center items-center gap-6">
