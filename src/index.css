@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-image {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.gradient-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/assets/backgroud-2.png");
+  background-size: cover;
+  background-position: center;
+  transform: scaleY(-1);
+  z-index: -1;
+}
+
+.bg_main {
+  background: #0e0a2b;
+}
+
+.nav_bg {
+  background-color: #131234;
+}
