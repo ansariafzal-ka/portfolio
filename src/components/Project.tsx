@@ -1,5 +1,6 @@
-import TechCircle from "./utils/TechCircle"; // Ensure correct path
+import TechCircle from "./utils/TechCircle";
 import ProjectCard from "./utils/ProjectCard";
+import { FaArrowRight } from "react-icons/fa";
 
 const techCirclesIdeaHub = [
   <TechCircle image="icons\next-js.svg" key="nextjs" />,
@@ -47,6 +48,13 @@ const techCirclesTodo = [
   <TechCircle image="icons\tailwind.svg" key="tailwind" />,
 ];
 
+const techCirclesCodeEditor = [
+  <TechCircle image="icons\react.svg" key="react" />,
+  <TechCircle image="icons\mongodb.svg" key="mongodb" />,
+  <TechCircle image="icons\javascript.svg" key="javascript" />,
+  <TechCircle image="icons\tailwind.svg" key="tailwind" />,
+];
+
 const Project = () => {
   return (
     <section id="projects" className="gradient-image border-t border-gray-500">
@@ -84,11 +92,11 @@ const Project = () => {
             techCircles={techCirclesCodeLangInsights}
           />
           <ProjectCard
-            image="images\wanderway.png"
-            title="WanderWay Landing Page"
-            description="This landing page for a travel website, built with React and Tailwind CSS, offers a visually appealing introduction to various services. It features a responsive design, ensuring a smooth experience across all devices. While it’s a static page with no functionality, it effectively showcases the site’s aesthetic appeal."
-            link="https://wanderway-landing-page.vercel.app/"
-            techCircles={techCirclesWanderWay}
+            image="images\code-editor.png"
+            title="Code Editor"
+            description="Developed a full-stack code editor using the MERN stack, allowing users to create, delete, and execute code snippets directly in their browser. Leveraged Tailwind CSS for a sleek design. Implemented MongoDB for efficient code storage and retrieval, providing a seamless and interactive coding experience."
+            link="https://github.com/ansariafzal-ka/Code-Editor-MERN"
+            techCircles={techCirclesCodeEditor}
           />
           <ProjectCard
             image="images\gemini-clone.png"
@@ -104,6 +112,23 @@ const Project = () => {
             link="https://todo-nextjs-application.vercel.app/"
             techCircles={techCirclesTodo}
           />
+          <ProjectCard
+            image="images\wanderway.png"
+            title="WanderWay Landing Page"
+            description="This landing page for a travel website, built with React and Tailwind CSS, offers a visually appealing introduction to various services. It features a responsive design, ensuring a smooth experience across all devices. While it’s a static page with no functionality, it effectively showcases the site’s aesthetic appeal."
+            link="https://wanderway-landing-page.vercel.app/"
+            techCircles={techCirclesWanderWay}
+          />
+          <div className="flex justify-center items-center gap-2 rounded-lg text-white text-xl font-medium">
+            <a
+              href="https://github.com/ansariafzal-ka?tab=repositories"
+              target="_blank"
+              className="flex justify-center items-center gap-2 text-white text-xl font-medium hover:underline"
+            >
+              <p>More Projects</p>
+              <FaArrowRight />
+            </a>
+          </div>
         </div>
       </div>
     </section>

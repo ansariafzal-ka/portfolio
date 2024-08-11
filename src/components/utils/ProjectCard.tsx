@@ -1,3 +1,6 @@
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 interface CardProps {
   image: string;
   title: string;
@@ -13,8 +16,24 @@ const ProjectCard = ({
   link,
   techCircles,
 }: CardProps) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  if (inView) {
+    controls.start({ opacity: 1, x: 0 });
+  }
+
   return (
-    <div className="mb-8 bg-gradient-to-br from-violet-900 to-slate-950 border border-violet-900 p-4 flex flex-col justify-center items-start gap-y-3 rounded-lg">
+    <motion.div
+      ref={ref}
+      className="mb-8 bg-gradient-to-br from-violet-900 to-slate-950 border border-violet-900 p-4 flex flex-col justify-center items-start gap-y-3 rounded-lg"
+      initial={{ opacity: 0, x: -50 }}
+      animate={controls}
+      transition={{ duration: 1 }}
+    >
       <img
         className="rounded-lg w-full object-cover object-top min-h-[230px] max-h-[230px]"
         src={image}
@@ -33,7 +52,7 @@ const ProjectCard = ({
       <div className="flex justify-start items-center gap-2 mt-2">
         {techCircles}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
