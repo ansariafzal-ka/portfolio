@@ -29,7 +29,7 @@ const AboutCard = ({ icon, title, description }: CardProps) => {
     >
       {icon}
       <h1 className="text-xl font-medium">{title}</h1>
-      <p className="text-center text-gray-300 font-medium">{description}</p>
+      <div className="text-center text-gray-300 font-medium">{description}</div>
     </motion.div>
   );
 };
